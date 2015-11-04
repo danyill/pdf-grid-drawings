@@ -17,7 +17,7 @@ __author__ = "Daniel Mulholland"
 __copyright__ = "Copyright 2015, Daniel Mulholland"
 __credits__ = ["Whoever wrote ghostscript, python!"]
 __license__ = "GPL"
-__version__ = "0.5"
+__version__ = "0.51"
 __maintainer__ = "Daniel Mulholland"
 __email__ = "dan.mulholland@gmail.com"
 
@@ -95,9 +95,6 @@ def real_start(temporary_folder, zip_file_name):
     output, errors = p.communicate()
     #print output, errors
     if errors != "": print errors
-    
-    # remove the ps file
-    os.remove(output_name_ps)
     
 def merge_and_create_bookmarks(sortable, output_name, temporary_folder):
     # create bookmarks
